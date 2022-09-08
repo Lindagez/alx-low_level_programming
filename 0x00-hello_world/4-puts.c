@@ -1,10 +1,13 @@
+root@3363de16e00c:/alx-low_level_programming/0x00-hello_world# cat >  4-puts.c
 #include <stdio.h>
+
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: 0 after printing the function
+ * Return: Always 0 (Success)
  */
 int main(void)
-{puts("\"programming is like building a multilingual puzzle");
-             return (0);
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
