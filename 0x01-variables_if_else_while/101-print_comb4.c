@@ -1,15 +1,9 @@
-/*
- * File: 101-print_comb4.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of three different digits,
- *        in ascending order, separated by a comma followed by a space.
+ * main - print comb4.c
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
