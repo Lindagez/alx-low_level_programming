@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print comb4.
+ * main - Prints all possible combinations of three different digits,
+ *        in ascending order, separated by a comma followed by a space.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -15,20 +16,20 @@ int main(void)
 		{
 			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
-				printf((digit1 % 10) + '0');
-				printf((digit2 % 10) + '0');
-				printf((digit3 % 10) + '0');
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
 
 				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
 					continue;
 				
-				printf(',');
-				printf(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
 
-	printf('\n');
+	putchar('\n');
 
 	return (0);
 }
