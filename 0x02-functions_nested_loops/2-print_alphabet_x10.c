@@ -1,19 +1,21 @@
 #include "main.h"
+
 /**
- * main - Entry point
+ * print_alphabet_x10 - print alphabet [a..z]
  *
- * Return: Always 0 (Success)
+ * Return: - always (void)
  */
-
-int main(void)
+void print_alphabet_x10(void)
 {
-        int i = 1;
-        char name[8] = "_putchar";
+	char i;
+	int j;
 
-        for (i = 0; i < 8; i++)
-        {
-                _putchar(name[i]);
-        }
-        _putchar('\n');
-        return (0);
+	for (j = 0; j < 10; j++)
+	{
+		for (i = 'a'; i <= 'z'; i++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
+	}
 }
