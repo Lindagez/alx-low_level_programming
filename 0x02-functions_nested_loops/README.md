@@ -1,5 +1,5 @@
  0._putchar
-•       Write a program that prints linda, followed by a new line.
+•       Write a program that prints Holberton, followed by a new line.
 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 •       Write a function that prints the alphabet, in lowercase, followed by a new line.
 2. 10 x alphabet
@@ -20,5 +20,5 @@
 •       Write a function that prints the 9 times table, starting with 0.
 10. a + b
 •       Write a function that adds two integers and returns the result.
-11. lindagez, 98 Battery Street
+11. Holberton School, 98 Battery Street, San Francisco CA 94111
 •       Write a function that prints all natural numbers from n to 98, followed by a new line.
