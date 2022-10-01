@@ -1,23 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
 /**
- * main - the main function
- *
- * @argc: the number of parameter
- * @argv: an array contains the value of the parameter
- * Return: always 0.
+ * main - multiplies two arguments
+ * @argc: The argument count
+ * @argv: The argument vector
+ * Return: 0 - i it recieves two arguments and -1 if it does not
  */
+
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
-	{
-		puts("Error");
-	}
-	else
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	}
+	int total = 1, i;
 
-	return (0);
+
+	if (argc == 3)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			total *= atoi(argv[i]);
+		}
+		printf("%d\n", total);
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
 }
