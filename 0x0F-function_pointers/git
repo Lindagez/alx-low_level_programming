@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo dos2unix *
+sudo chmod u+x *
+sudo git add .
+sudo git commit -m "variadic"
+sudo git push
