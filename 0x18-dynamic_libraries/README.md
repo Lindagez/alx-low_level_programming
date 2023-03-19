@@ -1,1 +1,1 @@
-Dynamic library
+Dynamic libraries
