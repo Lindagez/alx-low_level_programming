@@ -1,23 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "search_algos.h"
+/**
+ *  * main - Entry point
+ *   *
+ *    * Return: Always EXIT_SUCCESS
+ *     */
+int linear_search(int *array, size_t size, int value) {
 
-int linear_search(int *array, size_t size, int value){
-	if (array != NULL) {
-		int idx = 0;
-		for (idx; idx < size; idx ++) {
-			if ( value != array[idx] ) {
-				printf("Value checked array[%d] = [%d]", idx, array[idx]);
-			}
-			else if (value == array[idx] ) {
-				return (idx);
-			}
-			else 
-				printf("Value is not in the array");
+    for (int i = 0; i < size; i++) {
+
+        printf("Found %d at index:  %d\n\n", array[i], value);
 
 
-		
-	}
+        if (array[i] == value) {
+            return i;
+        }
+    }
 
-}
-	else
-		return (-1);
+
+    return -1;
 }
